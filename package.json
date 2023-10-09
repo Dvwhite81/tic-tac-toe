@@ -1,0 +1,45 @@
+{
+  "name": "tip-calculator",
+  "version": "1.0.0",
+  "description": "Basic tip calculator",
+  "main": "main.js",
+  "author": "Dvwhite81",
+  "license": "",
+  "scripts": {
+    "dev:assets": "webpack --watch",
+    "dev:start": "live-server --open=./public/ --host=localhost --watch=./public/",
+    "dev": "concurrently 'yarn:dev:*'",
+    "build": "NODE_ENV=production webpack",
+    "prepare": "npx crlf --set=LF node_modules/.bin/live-server"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "concurrently": "^7.6.0",
+    "css-loader": "^6.7.3",
+    "live-server": "^1.2.2",
+    "mini-css-extract-plugin": "^2.7.2",
+    "node-sass": "^7.0.0",
+    "postcss": "^8.4.20",
+    "postcss-loader": "^7.0.2",
+    "postcss-preset-env": "^7.8.0",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dvhite81/tip-calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dvhite81/tip-calculator/issues"
+  },
+  "keywords": [
+    "JavaScript",
+    "Webpack",
+    "ES6+",
+    "live reload",
+    "Sass"
+  ]
+}
